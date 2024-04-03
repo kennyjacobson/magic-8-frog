@@ -53,10 +53,14 @@ app.frame('/', (c) => {
       <div
         style={{
           alignItems: 'center',
-          backgroundImage: 
+          // backgroundImage: 
+          //   status === 'response'
+          //     ? 'url(https://nfts-dataw.s3.amazonaws.com/magic-8-ball/froggie-on-right.png)'
+          //     : 'url(https://nfts-dataw.s3.amazonaws.com/magic-8-ball/froggie-on-left.png)',
+          background:
             status === 'response'
-              ? 'url(https://nfts-dataw.s3.amazonaws.com/magic-8-ball/froggie-on-right.png)'
-              : 'url(https://nfts-dataw.s3.amazonaws.com/magic-8-ball/froggie-on-left.png)',
+              ? 'linear-gradient(to right, #432889, #17101F)'
+              : 'black',
           backgroundSize: '100% 100%',
           display: 'flex',
           flexDirection: 'row',
